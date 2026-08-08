@@ -705,8 +705,22 @@ function topFunction(){
   });
 }
 </script>
+    <script>
+const nav = document.querySelector("nav");
+
+if (nav) {
+  nav.style.transition = "0.3s";
+
+  document.querySelectorAll("nav a").forEach(link => {
+    link.addEventListener("click", () => {
+      nav.style.display = "";
+    });
+  });
+}
+</script>
 </body>
 </html>
+
 
 
 
