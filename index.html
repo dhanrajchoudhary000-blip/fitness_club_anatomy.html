@@ -148,6 +148,71 @@ footer{
     }
 }
 </style>
+    <style>
+.anatomy-section{
+  padding:70px 7%;
+  background:#111;
+  color:white;
+}
+
+.anatomy-title{
+  text-align:center;
+  margin-bottom:40px;
+}
+
+.anatomy-title h2{
+  font-size:42px;
+}
+
+.anatomy-title span{
+  color:#ff3b30;
+}
+
+.anatomy-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:25px;
+}
+
+.anatomy-card{
+  background:#1b1b1b;
+  padding:25px;
+  border-radius:18px;
+  border:1px solid #292929;
+  transition:.3s;
+}
+
+.anatomy-card:hover{
+  transform:translateY(-8px);
+  border-color:#ff3b30;
+}
+
+.anatomy-card h3{
+  margin-bottom:10px;
+  font-size:24px;
+}
+
+.anatomy-card p{
+  color:#aaa;
+}
+
+.exercise-btn{
+  display:inline-block;
+  margin-top:18px;
+  padding:10px 20px;
+  background:#ff3b30;
+  color:white;
+  text-decoration:none;
+  border-radius:25px;
+  font-weight:bold;
+}
+
+@media(max-width:800px){
+  .anatomy-grid{
+    grid-template-columns:1fr;
+  }
+}
+</style>
 </head>
 
 <body>
