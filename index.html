@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Fitness Club | Anatomy & Training</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#0b0f14;
+    color:white;
+    line-height:1.6;
+}
+
+header{
+    background:#111820;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:10;
+}
+
+.logo{
+    font-size:25px;
+    font-weight:bold;
+    color:#00e676;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+}
+
+.hero{
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+    padding:60px 8%;
+    background:linear-gradient(135deg,#101820,#07110d);
+}
+
+.hero-text{
+    max-width:650px;
+}
+
+.hero h1{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.hero h1 span{
+    color:#00e676;
+}
+
+.hero p{
+    color:#c8c8c8;
+    font-size:18px;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    background:#00e676;
+    color:#07110d;
+    padding:14px 28px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+section{
+    padding:70px 8%;
+}
+
+.title{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.title h2{
+    font-size:38px;
+    margin-bottom:10px;
+}
+
+.title p{
+    color:#aaa;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#151d25;
+    padding:30px;
+    border-radius:15px;
+    border:1px solid #26313b;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    border-color:#00e676;
+}
+
+.card h3{
+    color:#00e676;
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#bbb;
+}
+
+.join{
+    text-align:center;
+    background:#101820;
+}
+
+footer{
+    text-align:center;
+    padding:25px;
+    background:#070b0f;
+    color:#888;
+}
+
+@media(max-width:700px){
+    nav{
+        display:none;
+    }
+
+    .hero h1{
+        font-size:40px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">FITNESS CLUB</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#anatomy">Anatomy</a>
+        <a href="#courses">Courses</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-text">
+        <h1>Train Smart.<br><span>Build Strong.</span></h1>
+
+        <p>
+            Welcome to Fitness Club — your online destination
+            for anatomy education, exercise training, yoga,
+            meditation and fitness courses.
+        </p>
+
+        <a href="#courses" class="btn">Explore Courses</a>
+    </div>
+</section>
+
+<section id="anatomy">
+    <div class="title">
+        <h2>Anatomy & Exercise</h2>
+        <p>Understand your body and train with knowledge.</p>
+    </div>
+
+    <div class="cards">
+        <div class="card">
+            <h3>💪 Muscle Anatomy</h3>
+            <p>Learn major muscle groups and how they work during exercise.</p>
+        </div>
+
+        <div class="card">
+            <h3>🏋️ Strength Training</h3>
+            <p>Learn proper exercise techniques and structured workouts.</p>
+        </div>
+
+        <div class="card">
+            <h3>🔥 Fat Burning</h3>
+            <p>Discover effective training methods for improving fitness.</p>
+        </div>
+
+        <div class="card">
+            <h3>🧘 Yoga & Mobility</h3>
+            <p>Improve flexibility, mobility, balance and body awareness.</p>
+        </div>
+    </div>
+</section>
+
+<section id="courses">
+    <div class="title">
+        <h2>Fitness Courses</h2>
+        <p>Learn step-by-step with our educational programs.</p>
+    </div>
+
+    <div class="cards">
+        <div class="card">
+            <h3>30-Day Fitness Course</h3>
+            <p>Daily workouts, anatomy lessons and fitness education.</p>
+        </div>
+
+        <div class="card">
+            <h3>Yoga Course</h3>
+            <p>Build a consistent yoga practice from beginner to advanced.</p>
+        </div>
+
+        <div class="card">
+            <h3>Ashtanga Series</h3>
+            <p>Explore structured Ashtanga yoga practice and progression.</p>
+        </div>
+
+        <div class="card">
+            <h3>Meditation</h3>
+            <p>Develop mindfulness, breathing and meditation skills.</p>
+        </div>
+    </div>
+</section>
+
+<section class="join" id="contact">
+    <div class="title">
+        <h2>Start Your Fitness Journey</h2>
+        <p>Learn. Train. Improve. Repeat.</p>
+    </div>
+
+    <a href="mailto:contact@fitnessclub.com" class="btn">
+        Join Now
+    </a>
+</section>
+
+<footer>
+    © 2026 Fitness Club | Anatomy & Training
+</footer>
+
+</body>
+</html>
