@@ -1718,8 +1718,128 @@ if (nav) {
     </p>
   </div>
 </section>
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitness Club - Login</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #111, #333);
+    }
+
+    .login-box {
+      width: 90%;
+      max-width: 400px;
+      padding: 35px;
+      background: white;
+      border-radius: 18px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+      text-align: center;
+    }
+
+    .login-box h1 {
+      margin-bottom: 10px;
+      font-size: 30px;
+    }
+
+    .login-box p {
+      margin-bottom: 25px;
+      color: #666;
+    }
+
+    input {
+      width: 100%;
+      padding: 14px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    button {
+      width: 100%;
+      padding: 14px;
+      margin-top: 15px;
+      border: none;
+      border-radius: 8px;
+      background: #111;
+      color: white;
+      font-size: 17px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #333;
+    }
+
+    #message {
+      margin-top: 15px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="login-box">
+    <h1>🏋️ Fitness Club</h1>
+    <p>Login to continue</p>
+
+    <input type="text" id="username" placeholder="Username">
+
+    <input type="password" id="password" placeholder="Password">
+
+    <button onclick="login()">Login</button>
+
+    <div id="message"></div>
+  </div>
+
+  <script>
+    function login() {
+
+      const username = document.getElementById("username").value;
+      const password = document.getElementById("password").value;
+      const message = document.getElementById("message");
+
+      // Demo login details
+      const correctUsername = "fitness";
+      const correctPassword = "123456";
+
+      if (username === correctUsername && password === correctPassword) {
+        message.style.color = "green";
+        message.innerHTML = "Login successful! 💪";
+
+        // Website page open
+        setTimeout(() => {
+          window.location.href = "index.html";
+        }, 1000);
+
+      } else {
+        message.style.color = "red";
+        message.innerHTML = "Wrong username or password ❌";
+      }
+    }
+  </script>
+
 </body>
 </html>
+</body>
+</html>
+        
         
         
           
