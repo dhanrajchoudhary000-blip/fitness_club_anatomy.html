@@ -642,8 +642,72 @@ footer{
     <a href="https://www.instagram.com/anatomyreel/" target="_blank" class="btn">
   Instagram Par Aao 😀
 </a>
+    <button id="topBtn" onclick="topFunction()">↑</button>
+
+<style>
+#topBtn{
+  display:none;
+  position:fixed;
+  bottom:25px;
+  right:20px;
+  z-index:999;
+  border:none;
+  outline:none;
+  background:#ff3b30;
+  color:white;
+  width:48px;
+  height:48px;
+  border-radius:50%;
+  font-size:24px;
+  font-weight:bold;
+  cursor:pointer;
+  box-shadow:0 5px 20px rgba(0,0,0,.4);
+}
+
+#topBtn:hover{
+  transform:translateY(-3px);
+  background:#fff;
+  color:#111;
+}
+
+.card,
+.anatomy-card{
+  animation:fadeUp .7s ease both;
+}
+
+@keyframes fadeUp{
+  from{
+    opacity:0;
+    transform:translateY(20px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+</style>
+
+<script>
+window.onscroll = function(){
+  const btn = document.getElementById("topBtn");
+
+  if(document.documentElement.scrollTop > 400){
+    btn.style.display = "block";
+  }else{
+    btn.style.display = "none";
+  }
+};
+
+function topFunction(){
+  window.scrollTo({
+    top:0,
+    behavior:"smooth"
+  });
+}
+</script>
 </body>
 </html>
+
 
 
 
